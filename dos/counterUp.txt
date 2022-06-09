@@ -1,0 +1,37 @@
+counterUp
+
+1.  js--link ---> jquery.min.js
+2.  js--link ---> js/counterup.min.js
+3.  js--link ---> js/conterup-waypoint.min.js
+
+4.  html 
+    {
+
+    <!-- counterUp -->
+            <div style="width: 100%">
+                <div style="display: flex; text-align: center; font-size: 30px; font-weight: bold">
+                    <div style="width: 33.333%">
+                        <span class="counter">1200</span>
+                    </div>
+                    <div style="width: 33.333%">
+                        <span class="counter">500</span>
+                    </div>
+                    <div style="width: 33.333%">
+                        <span class="counter">2000</span>
+                    </div>
+                </div>
+            </div>
+    }
+    
+5.  active js {
+
+    //counterUp
+    $(".counter").counterUp({
+        delay: 10,
+        time: 700,
+    });
+}
+
+6.  note [ 
+          <span class="counter">1200</span>
+         ]

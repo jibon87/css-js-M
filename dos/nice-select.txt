@@ -1,0 +1,33 @@
+nice select
+
+1.  js--link ---> jquery.min.js
+
+2.  js--link ---> js/nice-select.min.js
+
+3.  css--link ---> css/nice-select.min.css                     [
+
+3.  html 
+    {
+
+     <!-- nice select -->
+            <div>
+                <select class="select" name="" id="">
+                    <option value="">jibon hossain</option>
+                    <option value="">jibon</option>
+                    <option value="">jibon</option>
+                    <option value="">jibon</option>
+                    <option value="">jibon</option>
+                </select>
+            </div>
+
+    }
+    
+4.  active js {
+
+        // nice select
+            $(".select").niceSelect();
+    }
+
+5.  note [ 
+           class="select" || $(".select")
+         ]

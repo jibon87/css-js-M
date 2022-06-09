@@ -1,0 +1,40 @@
+img zoom
+
+1.  js--link ---> jquery.min.js
+
+2.  js--link ---> js/elevateZoom.min.js
+
+3.  css--link ---> [ 
+
+
+               ]
+
+4.  html 
+    {
+
+     <<!-- elevateZoom  -->
+                <div class="imgs">
+                    <img id="zoom_01" height="100%" width="100%" src="img/slider-4.jpg" data-zoom-image="img/slider-4.jpg" />
+                </div>
+
+    }
+    
+5.  active js {
+
+                // for img zoom
+            $("#zoom_01").elevateZoom({
+                zoomType: "inner",
+                cursor: "crosshair",
+            });
+
+    }
+
+6.  note [ 
+          
+            id="zoom_01"   --> active id
+            height="100%" 
+            width="100%" 
+            src="img/slider-4.jpg"              [ img-link can be same ]
+            data-zoom-image="img/slider-4.jpg"  [ img-link can be same ]
+
+         ]

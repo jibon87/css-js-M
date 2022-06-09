@@ -1,0 +1,135 @@
+<!-- button 1 -->
+                <div style="display: inline-block" class="wrapperbtn">
+                    <a href="#"><span>Hover Me!</span></a>
+                </div>
+
+                {
+                    /* button 1 */
+                        .wrapperbtn a {
+                            display: block;
+                            width: 200px;
+                            height: 40px;
+                            line-height: 40px;
+                            font-size: 18px;
+                            font-family: sans-serif;
+                            text-decoration: none;
+                            color: #333;
+                            letter-spacing: 2px;
+                            text-align: center;
+                            position: relative;
+                            -webkit-transition: all 0.35s;
+                            transition: all 0.35s;
+                            outline: 2px solid red;
+                        }
+                        .wrapperbtn a span {
+                            position: relative;
+                            z-index: 2;
+                            color: #222;
+                        }
+                        .wrapperbtn a:after {
+                            position: absolute;
+                            content: "";
+                            top: 0;
+                            left: 0;
+                            width: 0%;
+                            height: 100%;
+                            background: #ff003b;
+                            -webkit-transition: all 0.35s;
+                            transition: all 0.35s;
+                        }
+                        .wrapperbtn a:hover {
+                            color: #fff;
+                        }
+                        .wrapperbtn a:hover:after {
+                            width: 100%;
+                        }
+                }
+
+<!-- button 2 -->
+                <button style="display: inline-block" class="pulse">Pulse</button>
+    {            
+                /* button 2 */
+                button {
+                    background: none;
+                    border: 2px solid;
+                    font: inherit;
+                    line-height: 1;
+                    margin: 0.5em;
+                    padding: 1em 2em;
+                }
+                .pulse:hover,
+                .pulse:focus {
+                    animation: pulse 1s;
+                    box-shadow: 0 0 0 2em transparent;
+                }
+                @keyframes pulse {
+                    0% {
+                        box-shadow: 0 0 0 0 #ef8f6e;
+                        }
+                    }
+
+
+    }
+
+<!-- uplode-file -->
+                <div class="uplode-file">
+                    <label title="uplode-file" class="file-icon" for="file"><img src="img/folder.png" alt="uplode-file" e /></label>
+                    <input id="file" type="file" accept=".jpg" multiple />
+                </div>
+
+                {
+
+                        /* uplode-file */
+
+                        #file {
+                            display: none;
+                        }
+                        .file-icon img {
+                            margin-left: 30px;
+                            height: 40px !important;
+                            width: 40px !important;
+                            cursor: pointer;
+                            padding: 10px;
+                            -webkit-box-sizing: content-box;
+                            box-sizing: content-box;
+                            border-radius: 100%;
+                        }
+                        .file-icon :hover {
+                            background: rgba(103, 100, 109, 0.1);
+                        }
+                }
+
+ <!-- after befor -->
+                    <div class="after">
+                        <h1>jibon</h1>
+                    </div>
+{
+          /* after */
+            .after h1 {
+                position: relative;
+                display: inline-block;
+                font-size: 30px;
+                color: #222;
+            }
+            .after h1::after,
+            .after h1::before {
+                position: absolute;
+                content: "";
+                height: 2px;
+                width: 40px;
+                top: 50%;
+                background-color: #222;
+            }
+            .after h1::after {
+                left: 120%;
+            }
+            .after h1::before {
+                right: 120%;
+            }
+}
+
+!-- download file -->
+                    <div class="download">
+                        <a style="border: 2px solid #333; padding: 10px; margin: 2px; display: inline-block" href="img/slider-3.jpg" download="fine-name">download file !</a>
+                    </div>
+

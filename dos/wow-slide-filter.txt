@@ -1,0 +1,51 @@
+<!-- wow img filter -->
+                <div class="min">
+                    <div class="img-slider">
+                        <textarea readonly></textarea>
+                        <textarea readonly></textarea>
+                    </div>
+                </div>
+
+{
+    
+            /* wow img filter */
+            .min {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+            .img-slider {
+                position: relative;
+                width: 442px;
+                height: 300px;
+                background-color: black;
+            }
+            .img-slider textarea {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                max-width: 100%;
+                height: 100%;
+                background: url(../img/slider-4.jpg);
+                background-size: 442px 300px;
+                background-repeat: no-repeat;
+                resize: none;
+                outline: none;
+                border: none;
+                opacity: 0.4;
+                -webkit-filter: grayscale(1);
+                filter: grayscale(1);
+            }
+            .img-slider textarea:nth-child(2) {
+                opacity: 1;
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+                width: 150px;
+                border-right: 2px solid white;
+                resize: horizontal;
+            }
+}

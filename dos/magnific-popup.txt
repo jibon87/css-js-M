@@ -1,0 +1,48 @@
+magnific popup
+
+1.  js--link ---> jquery.min.js
+
+2.  js--link ---> js/magnific-popup.min.js
+
+3.  css--link ---> css/magnific-popup.min.css 
+
+4.  html 
+    {
+        <!-- magnific-popup -->
+     <div id="open-popup" class="m-auto pb-5" style="height: 200px; width: 100%; cursor: pointer">
+            <a class="test-popup-link"><img height="100%" width="100%" src="img/slider-3.jpg" alt="" /></a>
+     </div>
+
+    }
+    
+5.  active js {
+
+        //magnificPopup
+    $("#open-popup").magnificPopup({
+        items: [
+            {
+                src: "../img/slider-4.jpg",
+                type: "image",
+            },
+            {
+                src: "../img/slider-3.jpg",
+                type: "image",
+            },
+            {
+                src: "../img/slider-5.jpg",
+                type: "image",
+            },
+            {
+                src: "https://www.youtube.com/watch?v=L6CpfyOHPoc",
+                type: "iframe", // this overrides default type
+            },
+        ],
+        gallery: {
+            enabled: true,
+        },
+        type: "image", // this is a default type
+    }
+
+6.  note [ 
+          live server need
+         ]

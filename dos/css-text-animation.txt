@@ -1,0 +1,219 @@
+css text animation
+
+1.  css--link ---> css/style.css  [ 
+
+                                    /* text css animation */
+                                    .wrapper {
+                                        display: -webkit-box;
+                                        display: -ms-flexbox;
+                                        display: flex;
+                                        -webkit-box-pack: center;
+                                        -ms-flex-pack: center;
+                                        -webkit-box-align: center;
+                                        -ms-flex-align: center;
+                                        align-items: center;
+                                    }
+                                    .wrapper .static-txt {
+                                        color: var(--text-color);
+                                        font-size: 60px;
+                                        font-weight: 400;
+                                    }
+                                    .wrapper .dynamic-txts {
+                                        margin-left: 15px;
+                                        height: 90px;
+                                        line-height: 90px;
+                                        overflow: hidden;
+                                    }
+                                    .dynamic-txts li {
+                                        list-style: none;
+                                        color: #fc6d6d;
+                                        font-size: 60px;
+                                        font-weight: 500;
+                                        position: relative;
+                                        top: 0;
+                                        -webkit-animation: slide 15s steps(5) infinite;
+                                        animation: slide 15s steps(5) infinite;
+                                    }
+                                    @-webkit-keyframes slide {
+                                        100% {
+                                            top: -450x;
+                                        }
+                                    }
+                                    @keyframes slide {
+                                        100% {
+                                            top: -450px;
+                                        }
+                                    }
+                                    .dynamic-txts li span {
+                                        position: relative;
+                                        margin: 5px 0;
+                                        line-height: 90px;
+                                    }
+                                    .dynamic-txts li span::after {
+                                        content: "";
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        height: 100%;
+                                        width: 100%;
+                                        background: var(--bkg-color);
+                                        border-left: 2px solid #fc6d6d;
+                                        -webkit-animation: typing 3s steps(10) infinite;
+                                        animation: typing 3s steps(10) infinite;
+                                    }
+                                    @-webkit-keyframes typing {
+                                        40%,
+                                        60% {
+                                            left: calc(100% + 30px);
+                                        }
+                                        100% {
+                                            left: 0;
+                                        }
+                                    }
+                                    @keyframes typing {
+                                        40%,
+                                        60% {
+                                            left: calc(100% + 30px);
+                                        }
+                                        100% {
+                                            left: 0;
+                                        }
+                                    }
+
+                                    /* auto-tex-1 */
+                                    .auto-tex-1 .dynamic-txts li span::after {
+                                        border-left: 2px solid green;
+                                    }
+                                    .auto-tex-1 .dynamic-txts li {
+                                        color: green;
+                                    }
+                                    .auto-tex-1 .dynamic-txts li {
+                                        -webkit-animation: slide1 6s steps(2) infinite;
+                                        animation: slide1 6s steps(2) infinite;
+                                    }
+                                    @-webkit-keyframes slide1 {
+                                        100% {
+                                            top: -180px;
+                                        }
+                                    }
+                                    @keyframes slide1 {
+                                        100% {
+                                            top: -180px;
+                                        }
+                                    }
+
+                                    /* auto-tex-2 */
+                                    .auto-tex-2 .dynamic-txts li span::after {
+                                        border-left: 2px solid green;
+                                    }
+                                    .auto-tex-2 .dynamic-txts li {
+                                        color: green;
+                                    }
+                                    .auto-tex-2 .dynamic-txts li {
+                                        -webkit-animation: slide2 9s steps(3) infinite;
+                                        animation: slide2 9s steps(3) infinite;
+                                    }
+                                    @-webkit-keyframes slide2 {
+                                        100% {
+                                            top: -270px;
+                                        }
+                                    }
+                                    @keyframes slide2 {
+                                        100% {
+                                            top: -270px;
+                                        }
+                                    }
+
+                                    /* auto-tex-3 */
+                                    .auto-tex-3 .dynamic-txts li span::after {
+                                        border-left: 2px solid rgb(85, 2, 201);
+                                    }
+                                    .auto-tex-3 .dynamic-txts li {
+                                        color: rgb(39, 52, 135);
+                                    }
+                                    .auto-tex-3 .dynamic-txts li {
+                                        -webkit-animation: slide1 12s steps(4) infinite;
+                                        animation: slide3 12s steps(4) infinite;
+                                    }
+                                    @-webkit-keyframes slide3 {
+                                        100% {
+                                            top: -360px;
+                                        }
+                                    }
+                                    @keyframes slide3 {
+                                        100% {
+                                            top: -360px;
+                                        }
+                                    }
+
+
+]
+
+                                    ]
+
+2.  html 
+    {
+
+                <!-- css text animation  -->
+                            <div style="width: 40%">
+                                <!-- text css 0-->
+                                <div class="wrapper">
+                                    <div class="static-txt">I'm a</div>
+                                    <ul class="dynamic-txts">
+                                        <li><span>YouTuber</span></li>
+                                        <li><span>Designer</span></li>
+                                        <li><span>Developer</span></li>
+                                        <li><span>Freelancer</span></li>
+                                        <li><span>coder</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- text css 1 -->
+                                <div class="wrapper auto-tex-1">
+                                    <div class="static-txt">jibon is a</div>
+                                    <ul class="dynamic-txts">
+                                        <li><span>persotion</span></li>
+                                        <li><span>Designer</span></li>
+                                    </ul>
+                                </div>
+
+                                <!-- text css 2 -->
+                                <div class="wrapper auto-tex-2">
+                                    <div class="static-txt">jibon is a</div>
+                                    <ul class="dynamic-txts">
+                                        <li><span>abcdef</span></li>
+                                        <li><span>12345</span></li>
+                                        <li><span>-=-=-=-=-=-</span></li>
+                                    </ul>
+                                </div>
+                                <!-- text css 3 -->
+                                <div class="wrapper auto-tex-3">
+                                    <div class="static-txt">my name is</div>
+                                    <ul class="dynamic-txts">
+                                        <li><span>md</span></li>
+                                        <li><span>jabed</span></li>
+                                        <li><span>hossain</span></li>
+                                        <li><span>jibon</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+    }
+    
+3.  active js {
+
+    
+}
+
+4.  note [ 
+
+    for 1 word ------>
+          animation: slide3 3s steps(1) infinite;
+
+          @keyframes slide3 {
+                 100% {
+                       top: -90px;
+                     }
+              }
+         ]

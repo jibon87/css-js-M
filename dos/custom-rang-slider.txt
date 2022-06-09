@@ -1,0 +1,50 @@
+js rang-slider
+
+1.  js--link ---> js/js-rang-slider.js
+
+2.  css--link ---> css/js-rang-slider.css  
+
+
+3.  html 
+    {
+
+    < <!-- js rang-slider -->
+            <div style="width: 30%">
+                <div class="rang-slider">
+                    <div class="price-input">
+                        <div class="field">
+                            <span>Min</span>
+                            <input type="number" class="input-min" value="25" />
+                        </div>
+                        <div class="separator">-</div>
+                        <div class="field">
+                            <span>Max</span>
+                            <input type="number" class="input-max" value="75" />
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="100" value="25" step="1" />
+                        <input type="range" class="range-max" min="0" max="100" value="75" step="1" />
+                    </div>
+                </div>
+            </div>
+    }
+    
+4.  active js {
+
+    
+}
+
+5.  note [ 
+          
+          css line 50 , 51 --->     left: 25%; /* ligen color css*/
+                                    right: 25%; /* ligen color css*/
+
+          js line 4        --->     let priceGap = 10; // price gap
+
+          html             --> input file max & min vule same 
+
+         ]

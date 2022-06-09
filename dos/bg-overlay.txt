@@ -1,0 +1,42 @@
+bg overlay
+
+1.  js--link ---> jquery.min.js
+
+2.  css--link ---> css/style.css  [ 
+                                        * bg overlay */
+                                            .overlay::after {
+                                                content: '';
+                                                background-color: black;
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                height: 100%;
+                                                width: 100%;
+                                                opacity: .5;
+                                            }
+
+                                    ]
+
+3.  html 
+    {
+
+    <!-- img overlay -->
+                <div style="position: relative; height: 200px; ">
+                    <div class="overlay" style="position: absolute; top: 0; left: 0; bottom: 0;">
+                        <img height="100%" width="100%" src="img/slider-3.jpg" alt="" />
+                    </div>
+                    <div style="position: absolute; color: #fff; right: 0; left: 0; text-align: center; top: 50%; transform: translateY(-50%)">
+                        <h2>hover</h2>
+                    </div>
+                </div>
+
+    }
+    
+4.  active js {
+
+    
+}
+
+5.  note [ 
+          
+         ]

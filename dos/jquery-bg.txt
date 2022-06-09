@@ -1,0 +1,41 @@
+jquery-bg
+
+1.  js--link ---> jquery.min.js
+
+2.  css--link ---> css/style.css  [ 
+                                        /* jquery-bg */
+                                        .jquery-bg {
+                                            width: 500px;
+                                            height: 100%;
+                                            border-radius: 15px;
+                                            background-size: cover;
+                                            background-position: center center;
+                                            background-repeat: no-repeat;
+
+                                    ]
+
+3.  html 
+    {
+
+     <!-- jquery-bg -->
+           <div class="jquery-bg" data-background-image="img/slider-3.jpg">
+                <div>
+                    <h2 style="text-align: center;padding-top: 20px;background-color: rgba(240, 248, 255, 0.41);">jibon</h2>
+                </div>
+            </div>
+
+    }
+    
+4.  active js {
+
+        // jquery-bg
+            $("*[data-background-image]").each(function () {
+                $(this).css({
+                    "background-image": "url(" + $(this).data("background-image") + ")",
+                });
+            });
+    }
+
+5.  note [ 
+          
+         ]

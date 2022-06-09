@@ -1,0 +1,51 @@
+Round progressbar
+
+1.  js--link ---> jquery.min.js
+
+2.  js--link ---> js/round-progressbar.min.js
+
+3.  js--link ---> js/round-progressbar-active.js
+
+4.  css--link ---> css/round-progressbar.css [ 
+                                       
+
+                                    ]
+
+5.  html 
+    {
+
+    <!--round progressbar -->
+                <div style="display: flex;">
+                    <div class="progressbar" data-animate="false">
+                        <div class="circle" data-percent="95">
+                            <div></div>
+                            <p>html</p>
+                        </div>
+                    </div>
+                    <div class="progressbar" data-animate="false">
+                        <div class="circle" data-percent="30.5">
+                            <div></div>
+                            <p>css</p>
+                        </div>
+                    </div>
+                </div>
+
+    }
+    
+6.  active js {
+
+
+}
+
+7.  note [ 
+          
+          edit :
+
+            1. for %                       --> index.html                      > data-percent="95"
+            2. for fill-color(yellow)      --> js/round-progressbar.min.js     > search [ emptyFill ]
+            3. for fill-color(blue)        --> js/round-progressbar-active.js  > line [ 25 / color: "#0526fa", ]
+            4. for progress width          --> js/round-progressbar-active.js  > line [ 23 / thickness: 10, ]
+            4. for progress % color/size   --> css/round-progressbar.css       > line [ 27,28 / font-size: 20px;/color: rgb(96, 107, 200); ]
+            5. for progress p style        --> css/round-progressbar.css       > line [ 37 ]
+
+         ]

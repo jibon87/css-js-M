@@ -1,0 +1,47 @@
+multipull time count
+
+1.  js--link ---> jquery.min.js
+
+2.  js--link ---> js/multipull-countdown.min.js
+
+3.  css--link ---> css/style.css                     [
+    
+                        * multipull time count */
+                    .time-count {
+                        display: inline-block;
+                        margin: 10px;
+                        background: aliceblue;
+                        font-size: 26px;
+                        font-weight: bold;
+                        padding: 10px;
+                    }
+
+                    .time-count span {
+                        color: coral;
+                    }
+                                                     ]
+
+3.  html 
+    {
+
+    <div data-countdown="2024/04/29"></div>
+    <div data-countdown="2024/03/10"></div>
+    <div data-countdown="2023/01/01"></div>
+
+    }
+    
+4.  active js {
+
+    // multifull countdown
+
+    $("[data-countdown]").each(function () {
+        var $this = $(this),
+            finalDate = $(this).data("countdown");
+        $this.countdown(finalDate, function (event) {
+            $this.html(event.strftime('<div class="time-count">%D <span>DAY</span></div><div class="time-count">%H <span>Hour</span></div><div class="time-count">%M <span>Minute</span></div><div class="time-count">%S <span>Second</span></div>'));
+        });
+    });
+}
+5.  note [ 
+           
+         ]
